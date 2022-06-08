@@ -56,6 +56,7 @@ body {
     justify-content: space-between;
     align-items: stretch; */
     margin-left: 2rem;
+    
 }
 
 .tasks h2 {
@@ -66,24 +67,32 @@ body {
     /* border: 2px solid blue; */
     display: flex;
     flex-direction: column;
+   
 }
 
 .tasks label {
-    width: 250px;
+    width: 80%;
     margin-left: 0.5rem;
+    word-wrap: normal;
 
     /* color: blue; */
     text-decoration: none;
 }
 
 .task-div {
-    /* border: 2px solid green; */
+    
+    background-color: rgb(46, 163, 231);
+    width: 90%;
+    word-wrap: normal;
+    display: flex;
+    /* justify-content: space-between; */
 }
 
 #task-button {
     width: 1rem;
     height: 1.2rem;
-    margin-left: 10rem;
+    margin-right: 10rem;
+    /* justify-content: flex-end; */
  
     color: red;
     font-weight: 600;

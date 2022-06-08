@@ -7,9 +7,8 @@ const toDoList = document.getElementById("to-do-list");
 // console.log(toDoList);
 
 
+addBtn.onclick = function () {
 
-
-addBtn.addEventListener("click", () => {
     if(!toDoInput.value) {
         alert("Please enter something on the to do list!")
 
@@ -43,7 +42,15 @@ addBtn.addEventListener("click", () => {
         checkInput.addEventListener("click", () => {
             label.style.textDecoration = "line-through"
         })
+    }
 }
+
+toDoInput.addEventListener("keydown", (e) => {
+    if (e.keyCode === 13) {
+        addBtn.onclick();
+    }
 })
+
+
 
 
