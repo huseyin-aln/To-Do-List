@@ -1,10 +1,8 @@
 const toDoInput = document.querySelector("#to-do-input");
-// console.log(toDoInput);
+
 const addBtn = document.getElementById("add-button");
-// console.log(addBtn);
 
 const toDoList = document.getElementById("to-do-list");
-// console.log(toDoList);
 
 
 addBtn.onclick = function () {
