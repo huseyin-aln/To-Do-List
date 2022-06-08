@@ -51,12 +51,15 @@ body {
 
 .tasks {
     /* border: 2px solid red; */
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    margin-left: 3rem;
+    /* display: flex; */
+    /* justify-content: flex-start;
+    align-items: center; */
+    margin-left: 2rem;
     text-decoration: underline;
 }
 
-    
+.tasks h2 {
+    margin-bottom: 1rem;
+}
+
 
