@@ -15,13 +15,14 @@ body {
     background-repeat: no-repeat;
 }
 .container {
-    /* background-color: lightgray; */
+    background-color: lightgray;
+    opacity: 0.7;
+    border-radius: 20px;
     display: flex;
     flex-direction: column;
     margin: 3rem;
     width: 80vw;
     height: 80vh;
-    /* border-radius: 10px; */
 }
 
 .container h1 {
@@ -35,7 +36,6 @@ body {
     justify-content: center;
     width: 100%;
     margin: 2rem auto; 
-    /* border: 2px solid red; */
 }
 
 #to-do-input {
@@ -46,7 +46,6 @@ body {
     border: 2px solid black;
     border-radius: 5px;
     margin-right: 1rem;
-    
 }
 
 #add-button {
@@ -60,26 +59,20 @@ body {
 
 .tasks {
     margin-left: 2rem;
-
-    /* border: 2px solid red; */
 }
 
 .tasks h2 {
     margin-bottom: 1.5rem;
-    margin-left: 3rem;
+    margin-left: 2rem;
     color: red;
     text-decoration: underline;
 }
 
 #to-do-list{
-   
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin-left: 2rem;
-
-
-    /* border: 2px solid blue; */
+    margin-left: 3rem;
 }
 
 .tasks label {
@@ -94,7 +87,6 @@ body {
 }
 
 .task-div {
-    /* background-color: rgb(231, 188, 46); */
     width: 80%;
     word-wrap: normal;
     display: flex;
@@ -113,4 +105,26 @@ body {
 
 #check {
     transform: scale(3);
+}
+
+@media (max-width:768px) {
+    .to-do {
+        width: 90%;
+    }
+
+    .tasks h2 {
+        margin-left: 1rem;
+    }
+
+    #to-do-list {
+        margin-left: 1rem;
+    }
+
+    #task-button {
+        transform: scale(1);
+    }
+
+    #check {
+        transform: scale(2);
+    } 
 }
